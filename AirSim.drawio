@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2021-09-16T03:59:06.500Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="7O8ffe7JqWnxIQd0M-_d" version="15.2.7" type="github"><diagram id="2j-dnvrhPGZeGhH3VrNi" name="ページ1">7VfbbtswDP0aPa6w5SRLHm3H3QpkQIEAu70Mqq3YamUpkJVbv36STflSL0GHtRiw9aniIWlSOodSg4K4PH5QZFt8khnlCHvZEQVLhLHvTTzzxyKnBpnPZw2QK5ZBUAes2SN1mYDuWEarQaCWkmu2HYKpFIKmeoARpeRhGLaRfFh1S3I6AtYp4WP0C8t0ASj2vM7xkbK8cKVnzlMSFw1AVZBMHnpQkKAgVlLqZlUeY8rt6bmDafKuz3jbzhQV+jkJn73vAot0v4/20Yb9ELflUr3DQEelT27LNDMnAKZUupC5FIQnHRopuRMZtZ/1jNXFrKTcGtA34D3V+gR0kp2WBip0ycFrOlanrzb/yvNmDvhWA8Fk4oDlEUo01qlv3VLFSqqpArDZhu397PEAVMmdSumFM/HnIDSicqovHR5uaTQDQKXpR51MoqKcaLYfdkJAiXkb13FlFkDXb1Dn2twTvoNSN4JpRrg59pCpNStH3FYHVnIiLIlpwXi2Iie5s1usNEkfnBUVUrFHKTRxhBm30kBn4A0i1jYTSOiEYZM2xg85/sTZ0ItXf1TJh3assM2nlYm/dZx5LbQilXatuDGy3oxURStEs/FcmHVqsq0uQBN7qjQ9XlbFmENIwO4Cg/sLB2AferfBDLCifxG4sX953hcj3qWIOTMsJAGa+yh8j5I5iqYoMospmkdoMUV20IMjsQdoRpOJ/Oq+kqLOwGiBUTJD8wSFGL6xWPQyYqIQjpdKGuFAiQQybQmzCFAUu0Vgq4chCpcQHF3X/SQupkaeKtORx+lGt9qIJZd2wIWsJbthnD+Bqi1JzWZWddZy8kR1VlOWfmYu9BAKaHtHNbIid60WldRE92yjECe4Z6nowoSOtQVaeq6UFq+lJBy8KemfUFJ72fxKSi8vG38kG/vc3JTrRg/V27Pzp8/OxHTef3amf/3Vaf7XGZCOcBRqrdjdTlO/N+R9HJ/Bg/9ibM+x/PoPgDG7Xxa1r/cDLUh+Ag==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-16T04:00:51.665Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="ofYrzPdmb85x-hMb_iub" version="15.2.7" type="github">
+  <diagram id="2j-dnvrhPGZeGhH3VrNi" name="ページ1">
+    <mxGraphModel dx="856" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="V0Zn2ncvvBvBfi_nPmDr-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.344;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="V0Zn2ncvvBvBfi_nPmDr-18" target="V0Zn2ncvvBvBfi_nPmDr-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V0Zn2ncvvBvBfi_nPmDr-18" value="InitializeAirSim" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="240" y="230" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="V0Zn2ncvvBvBfi_nPmDr-19" value="onClickで起動&#xa;setting.jsonを探す&#xa;Car,Droneのシーン読み込み" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="V0Zn2ncvvBvBfi_nPmDr-18" vertex="1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="V0Zn2ncvvBvBfi_nPmDr-23" value="onClickで起動&#xa;setting.jsonを探す&#xa;Car,Droneのシーン読み込み" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="V0Zn2ncvvBvBfi_nPmDr-18" vertex="1">
+          <mxGeometry y="120" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="V0Zn2ncvvBvBfi_nPmDr-21" value="AirSImSettings" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="414" y="50" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="V0Zn2ncvvBvBfi_nPmDr-22" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="V0Zn2ncvvBvBfi_nPmDr-21" vertex="1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ThfKir7YbbVasL51CzR_-1" value="smoothFollow" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="580" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ThfKir7YbbVasL51CzR_-2" value="カメラのドローン追跡" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="ThfKir7YbbVasL51CzR_-1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
