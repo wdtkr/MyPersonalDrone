@@ -9,7 +9,7 @@ public class InitializeAirSim : MonoBehaviour
 {
     void Awake()
     {
-        Application.targetFrameRate = 30;//フレームレート
+        Application.targetFrameRate = 50;//フレームレート
 
         if (GetAirSimSettingsFileName() != string.Empty)
         {
@@ -26,6 +26,7 @@ public class InitializeAirSim : MonoBehaviour
                     case "Multirotor":
                     {
                         LoadSceneAsPerSimMode(AirSimSettings.GetSettings().SimMode);
+                        Debug.Log(GetAirSimSettingsFileName());
                         break;
                     }
 				}
@@ -41,6 +42,7 @@ public class InitializeAirSim : MonoBehaviour
         }
     }
 
+//setting.jsonを探す
     public static string GetAirSimSettingsFileName()
     {
 

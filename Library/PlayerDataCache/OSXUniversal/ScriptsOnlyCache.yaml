@@ -7,15 +7,22 @@ ScriptsOnlyBuild:
     - AirSimUnity.DataCaptureScript
     - AirSimUnity.Drone
     - AirSimUnity.DroneControllerInput
+    - AirSimUnity.ResetButton
     - AirSimUnity.Weather
     - AirSimUnity.WeatherFX
     - AirSimUnity.WeatherHUD
     - AirSimUnity.WeatherHUDSlider
     - InitializeAirSim
     - SmoothFollow
+    GitHub.Unity.45.dll:
+    - GitHub.Unity.ApplicationCache
+    - GitHub.Unity.EnvironmentCache
+    - GitHub.Unity.GitAheadBehindCache
+    - GitHub.Unity.GitLocksCache
+    - GitHub.Unity.GitStatusCache
+    - GitHub.Unity.RepositoryInfoCache
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
-    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -56,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -69,49 +78,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1530}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1570}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1660}
+      Script: {instanceID: 1700}
     - Class: 114
-      Script: {instanceID: 1710}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1950}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 2056}
     - Class: 114
-      Script: {instanceID: 2062}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2186}
+      Script: {instanceID: 2324}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2388}
     - Class: 114
-      Script: {instanceID: 2350}
+      Script: {instanceID: 2488}
     - Class: 114
-      Script: {instanceID: 2452}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3368}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3680}
     - Class: 114
-      Script: {instanceID: 3544}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 3788}
+      Script: {instanceID: 3950}
     - Class: 114
-      Script: {instanceID: 3922}
+      Script: {instanceID: 3958}
     - Class: 114
-      Script: {instanceID: 4182}
+      Script: {instanceID: 4094}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 4356}
+    - Class: 114
+      Script: {instanceID: 4458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -162,21 +173,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1570}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 1930}
     - Class: 114
-      Script: {instanceID: 2062}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2350}
+      Script: {instanceID: 2488}
     - Class: 114
-      Script: {instanceID: 2452}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 3022}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -332,12 +343,6 @@ ScriptsOnlyBuild:
     className: WeatherHUDSlider
   - hash:
       serializedVersion: 2
-      Hash: 5f170942ee57c7a568f5bcfc7521adea
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: EnumerableTestState
-  - hash:
-      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -414,6 +419,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MyInitialize
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -644,6 +655,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AirSimUnity
+    className: ResetButton
+  - hash:
+      serializedVersion: 2
       Hash: 55741f0442b97aed4af1ca0466cb8d47
     assemblyName: Assembly-CSharp.dll
     namespaceName: AirSimUnity
@@ -712,4 +729,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SimModeSelector.unity
   - Assets/Scenes/DroneDemo.unity
-  playerPath: /Users/k20025/MyPersonalDrone/untitled folder
+  playerPath: /Users/k20025/MyPersonalDrone/1012.app

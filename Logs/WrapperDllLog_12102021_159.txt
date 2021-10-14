@@ -1,0 +1,3 @@
+initial opening
+[Information] 	<Tue Oct 12 15:09:49 2021> 	Starting server for : Multirotor
+[Information] 	<Tue Oct 12 15:16:24 2021> 	Starting server for : Multirotor

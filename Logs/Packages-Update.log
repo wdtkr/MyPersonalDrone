@@ -1,0 +1,9 @@
+
+=== Tue Oct 12 15:08:21 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 1.5.7 から 1.7.1 へ
+  com.unity.test-framework をバージョン 1.1.24 から 1.1.27 へ
