@@ -26,10 +26,8 @@ public class ResetButton : MonoBehaviour
     public void OnClick()
     {
         Debug.Log("reset");
-        //SceneManager.LoadScene ("DroneDemo");
+        SceneManager.LoadScene ("DroneDemo");
         //Drone.transform.rotation = new Vector3(0.0f,0.0f,0.0f);
-        // AirSimRCData rcData = drone.GetRCData();
-        // rcData.Reset();
         
 
         

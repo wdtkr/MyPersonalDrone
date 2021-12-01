@@ -14,81 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/Drone1.fbx
-    - Assets/Scenes/Drone1.fbx.meta
-    - Assets/Scenes/DroneDemo.unity
-    - Assets/Scripts.meta
-    - Assets/Scripts/drone.cs
-    - Assets/Scripts/drone.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/AirSimGlobal.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/AirSimGlobal.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/AirSimHUDScript.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/AirSimHUDScript.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/CameraFiltersScript.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/CameraFiltersScript.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/ColorEncoding.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/ColorEncoding.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/WeatherHUD.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/WeatherHUD.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/WeatherHUDSlider.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/HUD/WeatherHUDSlider.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/InitializeAirSim.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/InitializeAirSim.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/MyInitialize.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/MyInitialize.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/SmoothFollow.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/SmoothFollow.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/AirSimSettings.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/AirSimSettings.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/AirSimStructs.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/AirSimStructs.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/DataCaptureScript.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/DataCaptureScript.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/DataManager.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/DataManager.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/DataRecorder.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/DataRecorder.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/PInvokeWrapper.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Utilities/PInvokeWrapper.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Car.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Car/AirSimCarController.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Car/AirSimCarController.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Car/Car.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Car/Car.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/IAirSimInterface.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/IAirSimInterface.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/IVehicleInterface.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/IVehicleInterface.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Multirotor.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Multirotor/Drone.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Multirotor/Drone.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Multirotor/DroneControllerInput.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Multirotor/DroneControllerInput.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/ResetButton.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/ResetButton.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Vehicle.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/Vehicle.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/VehicleCompanion.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Vehicles/VehicleCompanion.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather/Weather.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather/Weather.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather/WeatherFX.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather/WeatherFX.cs.meta
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather/WeatherParamScalarCollection.cs
-    - Assets/Unity/UnityDemo/Assets/AirSimAssets/Scripts/Weather/WeatherParamScalarCollection.cs.meta
-    - Packages/manifest.json
-    - Packages/packages-lock.json
     - ProjectSettings/ProjectVersion.txt
-    - ProjectSettings/QualitySettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 0000
   RevisionSummary: 
   ChangesSearchValue: 
-  SelectedHistoryRevision: 
+  SelectedHistoryRevision: ef5bf116987980a3daf93a676c769ed26f20e1a1
   HistoryPageNumber: 0
-  TabIndex: 0
+  TabIndex: 1

@@ -8,9 +8,12 @@ public class drone : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody rb;
     float horz,vert,dep,yaw;
+    float lhorz=0;
     float horzto;
 
-    Vector3 pos;
+    Vector3 pos,latestpos;
+    Vector3 rt;//回転させるrotation
+    
 
     void Start()
     {
@@ -18,52 +21,18 @@ public class drone : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        
         horz=Input.GetAxis("Horizontal"); //左右LR
         vert=Input.GetAxis("Vertical"); //前後UpDown
         dep=Input.GetAxis("Depth"); //上下ws
         yaw=Input.GetAxis("Yaw"); //回転ad
+        Debug.Log("dep"+dep);
+        Debug.Log("yaw"+yaw);
+        Debug.Log("horz"+horz);
+        Debug.Log("vert"+vert);
 
-        // //左右旋回
-        // rb.AddTorque(0,yaw,0);
-
-        // //前傾後傾
-        // if(this.transform.rotation.x > 15 || this.transform.rotation.x < -15){
-        //     vert=0;
-        // }
-        // rb.MoveRotation(Quaternion.AngleAxis(vert*10, Vector3.right));
-        
-
-        // //左右傾
-        // if(this.transform.rotation.z > 15){
-        //     horz=0;
-        // }
-        // rb.MoveRotation(Quaternion.AngleAxis(horz*10, Vector3.back));
-        // //はなしたら0に近づく
-        
-        // //上下　
-        // rb.AddForce(horz*10,dep*20,vert*0.1f,ForceMode.Acceleration);
-
-        // //自動ホバリング
-        // // if(dep < 0.1){
-        // //     rb.AddForce(horz*10,dep*20,vert*3,ForceMode.Acceleration);
-        // // }
-
-        // pos = this.transform.position;
-        // pos.x=horz;
-        // pos.y=dep;
-        // pos.z=vert;
-        // this.transform.position = pos;
-
-        // 左右移動の傾きが再現できない
-        // if(dep<0) dep/=4;  
-        // this.transform.Translate(horz,dep/1.5f,vert);
-        // this.transform.Rotate(0, yaw*4, 0);
-        //this.transform.rotation = Quaternion.Euler(0, 0, horz*15);
-
-
+        //ドローンが向いている方向を基準に移動　
         pos=this.transform.position;
         pos.x = pos.x + vert * Mathf.Sin(this.transform.eulerAngles.y * Mathf.Deg2Rad)
                         +horz * Mathf.Cos(this.transform.eulerAngles.y * Mathf.Deg2Rad);
@@ -75,17 +44,43 @@ public class drone : MonoBehaviour
         
         //this.transform.rotation = Quaternion.Euler(0, 0, (horz+1)*(horz+1)*40);
         
-        if(horz>0.1f && -25<this.transform.rotation.y){
-            this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, transform.rotation.y, -25), 5);
-            horzto = -5f;
-        }else if(horz<-0.1f && this.transform.rotation.y<25){
-        this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, transform.rotation.y, 25), 5);
-            horzto = 5f;
-        }else{
-            this.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, transform.rotation.y, 0), 6);
-            //horzto=0;
+
+        //回転
+        //左右移動時
+        // 条件式を前フレームの回転を使ったものに変える　
+        
+        rt = this.transform.rotation.eulerAngles;
+        rt.y += yaw*10;
+        if(horz > 0.1f ){
+            rt.z = 335;
+            //Debug.Log("r");
+        }else if(horz < -0.1f && rt.z<25){
+            rt.z = 25;
+            //Debug.Log("l");
+        }else if(Mathf.Abs(pos.x - latestpos.x) == 0){
+            rt.z=0;
+            //Debug.Log("stop");
+        }else if(Mathf.Abs(horz) < 0.01f){
+            rt.z = 360-rt.z;
+            //Debug.Log("return");
         }
-        this.transform.Rotate(0, yaw*20, 0);
+
+        // if(lhorz<horz && Mathf.Abs(rt.z)<20){
+        //     rt.z -= 5;
+        // }else if(horz<lhorz && Mathf.Abs(rt.z)<20){
+        //     rt.z += 5;
+        // }else if(Mathf.Abs(horz) < 0.01f){
+        //     rt.z=0;
+        // }else if(horz<=-0.8f){
+        //     rt.z = 25;
+        // }else if(horz>=0.8f){
+        //     rt.z = -25;
+        // }
+
+        this.transform.rotation = Quaternion.Euler(rt);
+        lhorz = horz;
+
+        latestpos = pos;
         
 
 
