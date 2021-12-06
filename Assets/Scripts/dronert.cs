@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class dronert : MonoBehaviour
 {
         Rigidbody rb;
@@ -9,6 +10,8 @@ public class dronert : MonoBehaviour
     float lhorz=0;
     float horzto;
     Vector3 pos,rt;
+
+    
 
 
     // Start is called before the first frame update
@@ -24,6 +27,5 @@ public class dronert : MonoBehaviour
         vert=Input.GetAxis("Vertical"); //前後UpDown
         dep=Input.GetAxis("Depth"); //上下ws
         yaw=Input.GetAxis("Yaw"); //回転ad
-
     }
 }

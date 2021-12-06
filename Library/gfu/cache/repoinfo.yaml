@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-12-01T23:06:49.443+09:00
-  initializedAtString: 2021-12-01T23:06:49.443+09:00
+  lastUpdatedAtString: 2021-12-06T04:24:26.393+09:00
+  initializedAtString: 2021-12-06T04:24:26.393+09:00
   currentGitRemote:
     name: origin
     url: git@github.com:OkamotoAi/MyPersonalDrone.git
@@ -25,13 +25,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: newScript
-    tracking: 
+    tracking: origin/newScript
   currentConfigBranch:
     name: newScript
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: git@github.com:OkamotoAi/MyPersonalDrone.git
+    trackingBranch: newScript
   currentConfigRemote:
     name: origin
     url: git@github.com:OkamotoAi/MyPersonalDrone.git

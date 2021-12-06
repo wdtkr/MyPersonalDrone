@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/InputManager.asset
     - 
     m_Values: 0000
   RevisionSummary: 
   ChangesSearchValue: 
-  SelectedHistoryRevision: ef5bf116987980a3daf93a676c769ed26f20e1a1
+  SelectedHistoryRevision: 
   HistoryPageNumber: 0
-  TabIndex: 1
+  TabIndex: 0

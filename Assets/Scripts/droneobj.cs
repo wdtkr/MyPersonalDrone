@@ -51,7 +51,7 @@ public class droneobj : MonoBehaviour
         pos=this.transform.position;
         if(dep<0) dep/=2; 
         pos.y+=dep/1.5f;
-        pos += CreateVector3Noise(0.001f,0.1f);
+        pos += CreateVector3Noise(0.005f,0.1f);
         this.transform.position = pos;
 
         rt = this.transform.rotation.eulerAngles;
