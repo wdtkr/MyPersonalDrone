@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/SimModeSelector.unity
-    - Assets/Scripts/InitializeAirSim.cs
-    - Assets/Scripts/NewBehaviourScript.cs
-    - Assets/Scripts/NewBehaviourScript.cs.meta
+    - Assets/Scenes/SimModeSelector.unity.meta
+    - Assets/Scripts/InitializeAirSim.cs.meta
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/ProjectVersion.txt
     - 
     m_Values: 0000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
-  TabIndex: 1
+  TabIndex: 0

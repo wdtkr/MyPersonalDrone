@@ -999,5 +999,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: InitAirSim
       objectReference: {fileID: 0}
+    - target: {fileID: 1250367534480972670, guid: a3da1738cea534d1d9408ba0d7d0e059, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3da1738cea534d1d9408ba0d7d0e059, type: 3}

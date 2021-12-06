@@ -23,10 +23,10 @@ public class droneobj : MonoBehaviour
         vert=Input.GetAxis("Vertical"); //前後UpDown
         dep=Input.GetAxis("Depth"); //上下ws
         yaw=Input.GetAxis("Yaw"); //回転ad
-        Debug.Log("dep"+dep);
-        Debug.Log("yaw"+yaw);
-        Debug.Log("horz"+horz);
-        Debug.Log("vert"+vert);
+        //Debug.Log("dep"+dep);
+        //Debug.Log("yaw"+yaw);
+        //Debug.Log("horz"+horz);
+        //Debug.Log("vert"+vert);
 
 
         //ドローンが向いている方向を基準に移動　

@@ -37,9 +37,8 @@ public class Racegame : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Item"))
+        if (other.gameObject.CompareTag("race_object"))
         {
-            Debug.Log(count);
             other.gameObject.SetActive(false);
             count++;
         }
