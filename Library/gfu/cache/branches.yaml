@@ -13,25 +13,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-12-06T15:40:28.515+09:00
-  initializedAtString: 2021-12-06T15:40:28.466+09:00
+  lastUpdatedAtString: 2021-12-07T02:44:19.837+09:00
+  initializedAtString: 2021-12-07T02:44:19.578+09:00
   localBranches:
   - name: main
-    tracking: 
-  - name: newScript
-    tracking: origin/newScript
+    tracking: origin/main
   - name: okamoto
     tracking: origin/okamoto
+  - name: takeru
+    tracking: origin/takeru
+  - name: takeru 2
+    tracking: 
   remoteBranches:
-  - name: origin/main
-    tracking: '[None]'
-  - name: origin/newScript
+  - name: origin/HEAD
     tracking: '[None]'
   - name: origin/okamoto
     tracking: '[None]'
+  - name: origin/takeru
+    tracking: '[None]'
   remotes:
   - name: origin
-    url: git@github.com:OkamotoAi/MyPersonalDrone.git
+    url: https://github.com/wdtkr/MyPersonalDrone.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  - name: upstream
+    url: https://github.com/OkamotoAi/MyPersonalDrone.git
     login: 
     user: 
     host: 
@@ -40,52 +49,61 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - main
-    - newScript
     - okamoto
+    - takeru
+    - takeru 2
     values:
     - name: main
+      remote:
+        name: origin
+        url: https://github.com/wdtkr/MyPersonalDrone.git
+      trackingBranch: main
+    - name: okamoto
+      remote:
+        name: origin
+        url: https://github.com/wdtkr/MyPersonalDrone.git
+      trackingBranch: okamoto
+    - name: takeru
+      remote:
+        name: origin
+        url: https://github.com/wdtkr/MyPersonalDrone.git
+      trackingBranch: takeru
+    - name: takeru 2
       remote:
         name: 
         url: 
       trackingBranch: 
-    - name: newScript
-      remote:
-        name: origin
-        url: git@github.com:OkamotoAi/MyPersonalDrone.git
-      trackingBranch: newScript
-    - name: okamoto
-      remote:
-        name: origin
-        url: git@github.com:OkamotoAi/MyPersonalDrone.git
-      trackingBranch: okamoto
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - main
-      - newScript
+      - HEAD
       - okamoto
+      - takeru
     subKeyValues:
     - Values:
-      - name: main
+      - name: HEAD
         remote:
           name: origin
-          url: git@github.com:OkamotoAi/MyPersonalDrone.git
-        trackingBranch: 
-      - name: newScript
-        remote:
-          name: origin
-          url: git@github.com:OkamotoAi/MyPersonalDrone.git
+          url: https://github.com/wdtkr/MyPersonalDrone.git
         trackingBranch: 
       - name: okamoto
         remote:
           name: origin
-          url: git@github.com:OkamotoAi/MyPersonalDrone.git
+          url: https://github.com/wdtkr/MyPersonalDrone.git
+        trackingBranch: 
+      - name: takeru
+        remote:
+          name: origin
+          url: https://github.com/wdtkr/MyPersonalDrone.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
+    - upstream
     values:
     - name: origin
-      url: git@github.com:OkamotoAi/MyPersonalDrone.git
+      url: https://github.com/wdtkr/MyPersonalDrone.git
+    - name: upstream
+      url: https://github.com/OkamotoAi/MyPersonalDrone.git
