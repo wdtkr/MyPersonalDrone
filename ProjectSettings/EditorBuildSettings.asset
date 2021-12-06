@@ -5,13 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SimModeSelector.unity
     guid: 2a2adab4f94d2a8428812b3c4db5f357
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: e3affb2d630374a00bac8bf523fa5028
+  - enabled: 1
+    path: Assets/Scenes/ModeSelect.unity
+    guid: e091febd3ea2e447894b276f1039905e
+  - enabled: 1
+    path: Assets/Scenes/MapSelect_Pra.unity
+    guid: 5e466db7c047d4b039317a8f592e23ad
+  - enabled: 1
+    path: Assets/Scenes/Start_Pra_11.unity
+    guid: a2f73deb4a8254a6dae02ae439de4938
+  - enabled: 1
     path: Assets/Scenes/DroneDemo.unity
     guid: 012f6bdfaada17042bf7917f7d4fcbd8
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
